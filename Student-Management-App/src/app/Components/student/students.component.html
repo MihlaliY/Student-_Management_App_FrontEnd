@@ -1,0 +1,23 @@
+<div class="form-container">
+  <h2>Add Student</h2>
+
+  <form (ngSubmit)="saveStudent()">
+    <input
+      type="text"
+      placeholder="Student Name"
+      [(ngModel)]="studentName"
+      name="studentName"
+      required
+    />
+
+    <input
+      type="email"
+      placeholder="Email"
+      [(ngModel)]="email"
+      name="email"
+      required
+    />
+
+    <button type="submit">Save Student</button>
+  </form>
+</div>
